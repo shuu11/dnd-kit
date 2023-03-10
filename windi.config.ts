@@ -1,4 +1,5 @@
 import { defineConfig } from 'windicss/helpers'
+import { theme } from './src/themes'
 
 export default defineConfig({
 	attributify: false,
@@ -15,9 +16,17 @@ export default defineConfig({
 		},
 
 		extend: {
+			colors: {
+				white: theme.color.white,
+
+				black: theme.bgc.black,
+				block: theme.bgc.block,
+				blockHover: theme.bgc.blockHover,
+				blockDnd: theme.bgc.blockDnd,
+			},
 			fontFamily: {
-				roboto_normal:['var(--font-roboto_normal)'],
-				roboto_bold:['var(--font-roboto_bold)'],
+				roboto_normal: ['var(--font-roboto_normal)'],
+				roboto_bold: ['var(--font-roboto_bold)'],
 				inter: ['var(--font-inter)'],
 				lora: ['var(--font-lora)'],
 				kenia: ['var(--font-kenia)'],

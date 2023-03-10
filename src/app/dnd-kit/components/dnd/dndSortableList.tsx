@@ -15,7 +15,7 @@ export default function DndSortableList(prop: Prop) {
 
 	const activeId = useRecoilValue(stateActiveDndId)
 
-	const className = activeId === uuid ? 'bg-gray-400 hover:bg-gray-400 shadow-2xl' : ''
+	const className = activeId === uuid ? 'bg-blockDnd hover:bg-blockDnd shadow-2xl' : ''
 
 	return (
 		<li className="flex-col-center w-full" {...sortableProp}>
